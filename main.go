@@ -59,6 +59,5 @@ func replaceCodeParts(mdFile []byte) (string, error) {
 	// replace unnecessarily added html tags
 	new = strings.Replace(new, "<html><head></head><body>", "", 1)
 	new = strings.Replace(new, "</body></html>", "", 1)
-	fmt.Println(new)
 	return new, nil
 }
