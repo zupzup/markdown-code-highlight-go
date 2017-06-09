@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"fmt"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/russross/blackfriday"
 	"github.com/sourcegraph/syntaxhighlight"
