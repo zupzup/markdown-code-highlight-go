@@ -30,7 +30,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = t.Execute(os.Stdout, struct{ Content string }{Content: replaced})
+	err = t.Execute(os.Stdout, struct{ Content template.HTML }{Content: template.HTML(replaced)})
 	if err != nil {
 		log.Fatal(err)
 	}
